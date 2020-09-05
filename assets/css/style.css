@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap&family=Open+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f8f9fa;
+  overflow-x: hidden;
+}
+
+/* ------------------------------------------------NAVBAR */
+
+.navbar-brand {
+  max-height: 80px;
+  padding: 10px;
+  font-family: "Lobster", cursive, sans-serif;
+  font-size: 30px;
+}
+
+.nav-item {
+  font-family: "Lobster", cursive, sans-serif;
+  color: rgb(12, 12, 12);
+  font-size: 20px;
+}
+
+/* ------------------------------------------------Footer */
+
+footer {
+  color: rgb(12, 12, 12);
+  min-height: 120px;
+  margin: 0;
+  padding: 10px 3px;
+}
+.social-links {
+  padding-bottom: 15px;
+}
+
+.social-links li:not(:first-child) {
+  padding-left: 2px;
+}
+
+.social-links li a i {
+  width: 40px;
+  height: 40px;
+  padding: 10px 0px;
+  border-radius: 50%;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: center;
+  color: rgb(255, 255, 28);
+  background: rgb(12, 12, 12);
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background:rgb(3, 161, 142);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.general-sub {
+  font-family: "Roboto", cursive, sans-serif;
+  font-weight: 500;
+  color: rgb(12, 12, 12);
+  padding-bottom: 5px;
+}
