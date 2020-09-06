@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f8f9fa;
+  background-color: #fafafa;
   overflow-x: hidden;
 }
 
@@ -33,13 +33,90 @@ body {
   color: #f8f9fa;
 }
 
+/* ------------------------------------------------HEADINGS */
+
+.section-heading {
+  font-family: "Lobster", cursive, sans-serif;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.heading {
+  font-family: "Lobster", cursive, sans-serif;
+}
+
+/* ------------------------------------------------BENEFITS & SERVICE SECTION Home Page */
+
+.card-custom {
+  background-color: rgb(3, 161, 142);
+  color:rgb(255, 255, 28);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service-list {
+  display: none;
+  list-style-position: outside;
+  color: #000505;
+}
+
+.benefits-list {
+  display: none;
+  list-style-position: outside;
+  color: #000505;
+}
+.about-list {
+  display: none;
+  color: #000505;
+}
+.contact-list {
+  display: none;
+  color: #000505;
+}
+
+.book-tour {
+  display: none;
+}
+
+.plan-tour {
+  display: none;
+}
+.contact-us {
+  display: none;
+}
+.about-us {
+  display: none;
+}
+
+.plan-btn {
+  background-color: rgb(255, 255, 28);
+  text-align: center;
+  color: rgb(12, 12, 12);
+}
+
+.card-body {
+  cursor: pointer;
+}
+
+.plan-btn:hover {
+  background-color: #fafafa;
+}
+
+.card-body h2:hover {
+  background-color: rgb(255, 255, 28);
+  color: rgb(12, 12, 12);
+}
+ 
+
+
 /* ------------------------------------------------Footer */
 
 footer {
   color: rgb(12, 12, 12);
   min-height: 120px;
   margin: 0;
-  padding: 10px 3px;
+  padding: 20px 5px;
 }
 .social-links {
   padding-bottom: 15px;
