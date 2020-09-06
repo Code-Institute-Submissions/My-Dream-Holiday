@@ -20,7 +20,7 @@
   <body>
     <header>
       <!--nav bar-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <a class="navbar-brand" href="index.html">
           <span class="navbar-brand">My Dream Holiday</span>
         </a>
@@ -41,21 +41,19 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="destination.html">Destination</a>
+            <li class="nav-item active">
+              <a class="nav-link " href="destination.html">Destination</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="travelsmagazine.html"
                 >Travel Magazine</a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="plantrip.html"
-                >Plan Your Trip</a
-              >
+            <li class="nav-item active">
+              <a class="nav-link" href="plantrip.html">Plan Your Trip</a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="contact.html">Contact us</a>
             </li>
           </ul>
@@ -63,18 +61,298 @@
       </nav>
       <!--nav bar-->
     </header>
-    <section>   
-    
+    <section class="container-fluid ">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-group-section">
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/sharm.jpg"
+              class="card-img-top"
+              alt="Sharm El-Sheikh"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Sharm El-Sheikh</h5>
+              <p class="card-text custum-text">
+                Sharm el-Sheikh is an Egyptian resort town between the desert of
+                the Sinai Peninsula and the Red Sea. It's known for its
+                sheltered sandy beaches, clear waters and coral reefs. Naama
+                Bay, with a palm tree-lined promenade, is filled with bars and
+                restaurants. Ras Muhammad National Park is a major diving
+                destination, with marine life around the Shark and Yolanda reefs
+                and the Thistlegorm wreck.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The Cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/alexa.jpg"
+              class="card-img-top"
+              alt="Alexandria"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Alexandria</h5>
+              <p class="card-text custum-text">
+                Alexandria is a Mediterranean port city in Egypt. During the
+                Hellenistic period, it was home to a lighthouse ranking among
+                the Seven Wonders of the Ancient World as well as a storied
+                library. Today the library is reincarnated in the disc-shaped,
+                ultramodern Bibliotheca Alexandrina. The city also has
+                Greco-Roman landmarks, old-world cafes and sandy beaches. Its
+                15th-century seafront Qaitbay Citadel is now a museum.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The Cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/dahab.jpg"
+              class="card-img-top"
+              alt="Dahab"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Dahab</h5>
+              <p class="card-text custum-text">
+                Dahab is a small town on the southeast coast of the Sinai
+                Peninsula in Egypt, approximately 80 km northeast of Sharm
+                el-Sheikh. Formerly a Bedouin fishing village, Dahab is now
+                considered to be one of Sinai's most treasured diving
+                destinations.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The Cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/cairo.jpg"
+              class="card-img-top"
+              alt="Cairo & Pyramids at Giza"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Cairo & Pyramids at Giza</h5>
+              <p class="card-text custum-text">
+                Eternally a top-rated attraction in Egypt, no visitor should
+                leave without visiting Great Pyramids and the Sphinx of Giza.
+                They are the only remaining seven wonders of the world of the
+                ancient world and over 4600 years old. They’re an imposing sight
+                and the whole complex is still shrouded in mystery.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/luxor.jpg"
+              class="card-img-top"
+              alt="Luxor And Aswan"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Luxor And Aswan</h5>
+              <p class="card-text custum-text">
+                Luxor, which was once known as Thebes (the capital of Ancient
+                Egypt) is located in Southern Egypt- 670 km South of Cairo.
+                Luxor today is a city of around 150,000 people. This city is
+                prominent for being an “open air museum” because of its unique
+                archaeological monuments.
+                <br />
+                Aswan, (previously known as Syene during Ancient Egypt) is
+                located about 81 KM south of Luxor. This small modern city has a
+                population of about 230,000 people who are mostly Nubians.
+                (People of an ancient region of Northeastern Africa) Aswan is
+                distinctively embellished for having a beautiful setting on the
+                Nile.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The Cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/hurghada1.jpg"
+              class="card-img-top"
+              alt="Hurghada"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Hurghada</h5>
+              <p class="card-text custum-text">
+                Hurghada is a beach resort town stretching some 40km along
+                Egypt's Red Sea coast. It's renowned for scuba diving, and has
+                numerous dive shops and schools in its modern Sekalla district.
+                There are many restaurants, bars and nightclubs, while the old
+                town, El Dahar, is home to traditional Egyptian coffee shops and
+                souks. Hurghada's long stretch of sandy beach is lined with
+                resort hotels.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4 d-md-none d-lg-block">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/marsa-alam.jpg"
+              class="card-img-top"
+              alt="Marsa Alam"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Marsa Alam</h5>
+              <p class="card-text custum-text">
+                Marsa Alam is a resort town on the Red Sea in Egypt. It’s
+                renowned for its sandy beaches and coral reefs. The U-shaped Abu
+                Dabab Bay is known for its sea turtles and dugongs (sea cows).
+                Kite-surf site El Naaba Lagoon is separated from the open sea by
+                a coral reef. Wadi el-Gemal National Park, south of the town,
+                encompasses desert, seagrass beds, reefs and islands.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/dubai.jpg"
+              class="card-img-top"
+              alt="Dubai"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Dubai</h5>
+              <p class="card-text custum-text">
+                Dubai is a city and emirate in the United Arab Emirates known
+                for luxury shopping, ultramodern architecture and a lively
+                nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the
+                skyscraper-filled skyline. At its foot lies Dubai Fountain, with
+                jets and lights choreographed to music. On artificial islands
+                just offshore is Atlantis, The Palm, a resort with water and
+                marine-animal parks.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card h-100 text-center custom-card">
+            <img
+              src="assets/images/petra.jpg"
+              class="card-img-top"
+              alt="Petra"
+            />
+            <div class="card-body">
+              <h5 class="card-title heading">Petra</h5>
+              <p class="card-text custum-text">
+                Petra is a famous archaeological site in Jordan's southwestern
+                desert. Dating to around 300 B.C., it was the capital of the
+                Nabatean Kingdom. Accessed via a narrow canyon called Al Siq, it
+                contains tombs and temples carved into pink sandstone cliffs,
+                earning its nickname, the "Rose City." Perhaps its most famous
+                structure is 45m-high Al Khazneh, a temple with an ornate,
+                Greek-style facade, and known as The Treasury.
+              </p>
+            </div>
+            <div class="card-footer card-footer-bg">
+              <button
+                class="btn btn-book"
+                data-toggle="modal"
+                data-target="#calculate"
+              >
+                Calculate The cost
+              </button>
+              <a href="contact.html" class="btn btn-book">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-
     <!--Footer-->
-        <footer class="container-fluid ">
-      <div  class="row">
+    <footer class="container-fluid">
+      <div class="row">
         <div class="col-md-4 text-center">
-          <h5 class="uppercase general-sub">Copyright © 2020 , all rights reserved.</h5>
-          <h5 class=" general-sub">This site is owned by My Dream Holday</h5>
+          <h5 class="uppercase general-sub">
+            Copyright © 2020 , all rights reserved.
+          </h5>
+          <h5 class="general-sub">This site is owned by My Dream Holday</h5>
         </div>
         <div class="col-md-4 text-center">
           <h5 class="uppercase general-sub">Social</h5>
@@ -92,10 +370,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a
-                target="_blank"
-                href="https://www.youtube.com/"
-              >
+              <a target="_blank" href="https://www.youtube.com/">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
                 <span class="sr-only">youtube</span>
               </a>
@@ -110,15 +385,131 @@
         </div>
         <div class="col-md-4 text-center">
           <h5 class="uppercase general-sub">Work for us</h5>
-          <p class="inline-block ">
-            Want to be one of our local experts?
-            Send Your C.V to My Dream Holiday@gmail.com
-
+          <p class="inline-block">
+            Want to be one of our local experts? Send Your C.V to My Dream
+            Holiday@gmail.com
           </p>
         </div>
-        
       </div>
     </footer>
+    <!--Modal-Calculate-->
+    <div class="modal" tabindex="-1" role="dialog" id="calculate">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Calculate Your Cost</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="inputcity" class="col-sm-4">City</label>
+                <select
+                  id="inputcity"
+                  class="form-control col-sm-6"
+                  onchange="selectCity()"
+                >
+                  <option selected>Choose Your Destination</option>
+                  <option value="100">SharmAl-shikh</option>
+                  <option value="50">Alexandria</option>
+                  <option value="70">Dahab</option>
+                  <option value="80">Hurghada</option>
+                  <option value="90">Luxor-And-Aswan</option>
+                  <option value="60">Cairo&Pyramids</option>
+                  <option value="65">Petra</option>
+                  <option value="110">Dubai</option>
+                  <option value="70">Marsa-Alam</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <label for="inputHotel" class="col-sm-4">Hotel</label>
+                <select
+                  id="inputHotel"
+                  class="form-control col-sm-6"
+                  onchange="selectHotel()"
+                >
+                  <option selected>Choose Hotel Stars</option>
+                  <option value="1.5">5 stars Hotel</option>
+                  <option value="1">4 stars Hotel</option>
+                  <option value="0.75">3 stars Hotel</option>
+                </select>
+              </div>
+              <div class="form-group row">
+                <label for="inputNoOfPersons" class="col-sm-4 col-form-label"
+                  >No. of Persons</label
+                >
+                <div class="col-sm-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputNoOfPersons"
+                  />
+                </div>
+                <label for="inputNoOfdays" class="col-sm-3 col-form-label"
+                  >No. of Days</label
+                >
+                <div class="col-sm-2">
+                  <input type="text" class="form-control" id="inputNoOfdays" />
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-10 pt-0">
+                    Do you like your journey to be perfect?
+                  </legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="guideCheck"
+                        value=""
+                      />
+                      <label class="form-check-label" for="defaultCheck">
+                        Book a private guide
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+              <div class="form-group row">
+                <div class="col-sm-4">
+                  <button onclick="calculate()" class="btn btn-dark">
+                    Calculate Now
+                  </button>
+                </div>
+                <div class="col-sm-5">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="CalculateTheCost"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-book"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <a href="contact.html" class="btn btn-book">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -130,6 +521,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    
+    <script src="assets/js/calculate.js"></script>
   </body>
 </html>

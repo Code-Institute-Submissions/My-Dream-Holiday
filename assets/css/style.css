@@ -16,14 +16,17 @@ body {
   max-height: 80px;
   padding: 10px 5px;
   font-family: "Lobster", cursive, sans-serif;
+  color: rgb(12, 12, 12);
   font-size: 30px;
 }
 
 .nav-item {
   font-family: "Lobster", cursive, sans-serif;
   color: rgb(12, 12, 12);
-  font-size: 20px;
+  font-size: 25px;
+  padding-left: 5px;
 }
+
 
 /* ------------------------------------------------Hero Img */
 
@@ -44,9 +47,10 @@ body {
 
 .heading {
   font-family: "Lobster", cursive, sans-serif;
+  font-size: 40px;
 }
 
-/* ------------------------------------------------BENEFITS & SERVICE SECTION Home Page */
+/* ------------------------------------------------BENEFITS & SERVICE SECTION-Home Page */
 
 .card-custom {
   background-color: rgb(3, 161, 142);
@@ -107,15 +111,58 @@ body {
   background-color: rgb(255, 255, 28);
   color: rgb(12, 12, 12);
 }
+
+/* ------------------------------------------------Card-Main section Destination Page */
+
+.custom-card{
+    border: rgb(3, 161, 142) solid 3px;
+}
+
+.card-footer-bg {
+    background-color: rgb(3, 161, 142);
+}
+.card-img-top {
+    height: 250px;
+}
+
+
+
+.card-group-section {
+    padding: 20px;
+}
+
+.custum-text {
+  font-family: "Roboto", cursive, sans-serif;
+  font-weight: 400;
+  color: rgb(12, 12, 12);
+  padding: 10px;
+  text-align: justify;
+}
+
+.btn-book {
+  background: rgb(255, 255, 28);
+  color:rgb(3, 161, 142); 
+  text-align: center;
+  width: 45%;
+  padding-left: 4px;
+}
+
+.btn-book:hover { 
+  color:  rgb(255, 255, 28);
+  background-color: rgb(12, 12, 12);
+}
+
+
+
  
 
 
 /* ------------------------------------------------Footer */
 
 footer {
-  color: rgb(12, 12, 12);
-  min-height: 120px;
-  margin: 0;
+  background-color:rgb(3, 161, 142);
+  min-height: 150px;
+  margin:10px 0 0;
   padding: 20px 5px;
 }
 .social-links {
@@ -123,7 +170,7 @@ footer {
 }
 
 .social-links li:not(:first-child) {
-  padding-left: 2px;
+  padding-left: 5px;
 }
 
 .social-links li a i {
@@ -131,8 +178,7 @@ footer {
   height: 50px;
   padding: 10px 10px;
   border-radius: 50%;
-  font-size: 15px;
-  line-height: 15px;
+  font-size: 25px;
   text-align: center;
   color: rgb(255, 255, 28);
   background: rgb(12, 12, 12);
@@ -143,7 +189,8 @@ footer {
 }
 
 .social-links li a i:hover {
-    background:rgb(3, 161, 142);
+    background: rgb(255, 255, 28);
+    color:rgb(3, 161, 142);
 }
 
 .uppercase {
@@ -152,7 +199,18 @@ footer {
 
 .general-sub {
   font-family: "Roboto", cursive, sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: rgb(12, 12, 12);
   padding-bottom: 5px;
+  padding-top: 10px;
+  
+}
+
+/* ------------------------------------------------Modal-Calculate */
+
+.modal-footer {
+   background-color:rgb(3, 161, 142); 
+}
+.modal-header {
+    background-color:rgb(3, 161, 142); 
 }
