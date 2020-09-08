@@ -20,7 +20,7 @@
   <body>
     <header>
       <!--nav bar-->
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <span class="navbar-brand">My Dream Holiday</span>
         </a>
@@ -42,7 +42,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link " href="destination.html">Destination</a>
+              <a class="nav-link" href="destination.html">Destination</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="travelsmagazine.html"
@@ -60,19 +60,111 @@
         </div>
       </nav>
       <!--nav bar-->
+      <!--Hero Image-->
+      <div class="row rounded mx-auto d-block logo-trip"></div>
+      <!--Hero Image-->
     </header>
-    <section>   
-    
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2 class="section-heading">Plan Your Trip From A to Z</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="process-wrapper">
+            <div id="progress-bar-container">
+              <ul>
+                <li class="step step01 active">
+                  <div class="step-inner">Destination</div>
+                </li>
+                <li class="step step02">
+                  <div class="step-inner">Reserch and Planing</div>
+                </li>
+                <li class="step step03">
+                  <div class="step-inner">Booking</div>
+                </li>
+                <li class="step step04">
+                  <div class="step-inner">Traveling</div>
+                </li>
+                <li class="step step05">
+                  <div class="step-inner">Contact Us</div>
+                </li>
+              </ul>
+
+              <div id="line">
+                <div id="line-progress"></div>
+              </div>
+            </div>
+
+            <div id="progress-content-section">
+              <div class="section-content st-step active">
+                <h2>Plan your trip, where and how to travel</h2>
+                <p>
+                  This the phase where you might be reading a magazine and you
+                  stumble upon an article on a particular country and you start
+                  dreaming of lying on the warm sand of that beach you’re
+                  reading about. Write down your ideas and suggestions, and
+                  compare them to the budget, time, and days at your disposal.
+                </p>
+              </div>
+
+              <div class="section-content nd-step">
+                <h2>Build your trip</h2>
+                <p>
+                  Once the holiday destination has been decided, the most
+                  time-consuming task comes along is start constructing the
+                  trip’s framework. You may need to consider:<br />
+                  What you absolutely want to visit? which Airline must use to
+                  reach your destination? the decision of where to stay, whether
+                  in a hotel, guest house.The weather: if you are going to take
+                  holiday at a specific time of year and you cannot change the
+                  dates, you must be aware that in other countries the season
+                  might be a different one. And it must always relate to the
+                  budget you have set for yourself.
+                </p>
+              </div>
+
+              <div class="section-content ed-step">
+                <h2>Book your trip</h2>
+                <p>
+                  At this stage, you should make bookings with hotels that allow
+                  you to cancel without having to pay a cancellation fee.
+                </p>
+              </div>
+
+              <div class="section-content th-step">
+                <h2>Travel</h2>
+                <p>
+                  Grab the folder filled with flight tickets, booking
+                  confirmation, information about the places you’ll visit, and
+                  all the other details gathered while organizing your trip,
+                  pack your backpack and enjoy the journey. A journey that, in
+                  some ways, has already begun.
+                </p>
+              </div>
+
+              <div class="section-content fi-step">
+                <h2>Contact Us</h2>
+                <p >
+                  You can contact us, and we will surely help you throughout all
+                  steps. We will do our best to make your dream come true
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    
-
     <!--Footer-->
-        <footer class="container-fluid ">
-      <div  class="row">
+    <footer class="container-fluid">
+      <div class="row">
         <div class="col-md-4 text-center">
-          <h5 class="uppercase general-sub">Copyright © 2020 , all rights reserved.</h5>
-          <h5 class=" general-sub">This site is owned by My Dream Holday</h5>
+          <h5 class="uppercase general-sub">
+            Copyright © 2020 , all rights reserved.
+          </h5>
+          <h5 class="general-sub">This site is owned by My Dream Holday</h5>
         </div>
         <div class="col-md-4 text-center">
           <h5 class="uppercase general-sub">Social</h5>
@@ -90,10 +182,7 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a
-                target="_blank"
-                href="https://www.youtube.com/"
-              >
+              <a target="_blank" href="https://www.youtube.com/">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
                 <span class="sr-only">youtube</span>
               </a>
@@ -108,13 +197,11 @@
         </div>
         <div class="col-md-4 text-center">
           <h5 class="uppercase general-sub">Work for us</h5>
-          <p class="inline-block ">
-            Want to be one of our local experts?
-            Send Your C.V to My Dream Holiday@gmail.com
-
+          <p class="inline-block general-sub ">
+            Want to be one of our local experts? Send Your C.V to My Dream
+            Holiday@gmail.com
           </p>
         </div>
-        
       </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -128,6 +215,36 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    
+    <script>
+      $(".step").click(function () {
+        $(this).addClass("active").prevAll().addClass("active");
+        $(this).nextAll().removeClass("active");
+      });
+
+      $(".step01").click(function () {
+        $("#line-progress").css("width", "3%");
+        $(".st-step").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step02").click(function () {
+        $("#line-progress").css("width", "25%");
+        $(".nd-step").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step03").click(function () {
+        $("#line-progress").css("width", "50%");
+        $(".ed-step").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step04").click(function () {
+        $("#line-progress").css("width", "75%");
+        $(".th-step").addClass("active").siblings().removeClass("active");
+      });
+
+      $(".step05").click(function () {
+        $("#line-progress").css("width", "100%");
+        $(".fi-step").addClass("active").siblings().removeClass("active");
+      });
+    </script>
   </body>
 </html>
