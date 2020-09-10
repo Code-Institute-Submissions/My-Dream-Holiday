@@ -15,12 +15,23 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
     <title>My Dream Holiday</title>
   </head>
   <body>
     <header>
       <!--nav bar-->
-      <nav class="navbar navbar-expand-lg navbar-light ">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="index.html">
           <span class="navbar-brand">My Dream Holiday</span>
         </a>
@@ -42,7 +53,7 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link " href="destination.html">Destinations</a>
+              <a class="nav-link" href="destination.html">Destinations</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="travelsmagazine.html"
@@ -61,11 +72,13 @@
       </nav>
       <!--nav bar-->
       <!--Hero Image-->
-      <div class="row rounded mx-auto d-block logo-destination" ></div>
+      <div id="map"></div>
       <!--Hero Image-->
     </header>
-    <section class="container-fluid ">
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-group-section">
+    <section class="container-fluid">
+      <div
+        class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-group-section"
+      >
         <div class="col mb-4">
           <div class="card h-100 text-center custom-card">
             <img
@@ -335,6 +348,7 @@
             </div>
             <div class="card-footer card-footer-bg">
               <button
+                type="button"
                 class="btn btn-book"
                 data-toggle="modal"
                 data-target="#calculate"
@@ -388,7 +402,7 @@
         </div>
         <div class="col-md-4 text-center">
           <h5 class="uppercase general-sub">Work for us</h5>
-          <p class="inline-block">
+          <p class="inline-block general-sub">
             Want to be one of our local experts? Send Your C.V to My Dream
             Holiday@gmail.com
           </p>
@@ -486,7 +500,11 @@
 
               <div class="form-group row">
                 <div class="col-sm-4">
-                  <button onclick="calculate()" class="btn btn-dark">
+                  <button
+                    type="button"
+                    onclick="calculate()"
+                    class="btn btn-dark"
+                  >
                     Calculate Now
                   </button>
                 </div>
@@ -501,18 +519,14 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-book"
-              data-dismiss="modal"
-            >
+            <button type="button" class="btn btn-book" data-dismiss="modal">
               Close
             </button>
             <a href="contact.html" class="btn btn-book">Book Now</a>
           </div>
         </div>
       </div>
-    </div> 
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -525,5 +539,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/calculate.js"></script>
+    <script src="assets/js/map.js"></script>
   </body>
 </html>

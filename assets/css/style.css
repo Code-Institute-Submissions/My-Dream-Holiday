@@ -6,76 +6,111 @@
   box-sizing: border-box;
 }
 
-
-
 /* ------------------------------------------------NAVBAR */
 
 .navbar-brand {
   max-height: 80px;
   padding: 10px 5px;
-  font-family: "Lobster", cursive, sans-serif;
+  font-family: "Lobster", sans-serif;
   color: rgb(12, 12, 12);
   font-size: 30px;
 }
 
 .nav-item {
-  font-family: "Lobster", cursive, sans-serif;
+  font-family: "Lobster", sans-serif;
   color: rgb(12, 12, 12);
   font-size: 25px;
   padding-left: 5px;
 }
 
-/* ------------------------------------------------Hero Img */
+/* ------------------------------------------------Hero Images*/
 
 .custum-caption {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: #fff;
+  font-family: "exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fafafa;
 }
 
-/* ------------------------------------------------HEADINGS */
+#map {
+  height: 500px;
+}
+
+.logo {
+  background: url("../images/logo-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.logo-trip {
+  background: url("../images/best-travel1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 600px;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+/* ------------------------------------------------general */
 
 .section-heading {
-  font-family: "Lobster", cursive, sans-serif;
+  font-family: "Lobster", sans-serif;
   padding: 20px;
   margin: 0;
   text-align: center;
 }
 
 .heading {
-  font-family: "Lobster", cursive, sans-serif;
+  font-family: "Lobster", sans-serif;
   font-size: 40px;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 /* ------------------------------------------------BENEFITS & SERVICE SECTION-Home Page */
 
 .card-custom {
-  background-color:rgb(247, 232, 239);
+  background-color: #dfdede;
   color: rgb(249, 79, 155);
-  border: rgb(12, 12, 12) solid 4px;
-  
-  margin-top: 10px;
-  margin-bottom: 10px;
+  border: rgb(12, 12, 12) solid 3px;
+  margin: 10px auto;
+  width: 90%;
+  cursor: pointer;
+}
+
+.home-list {
+  font-family: "exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .service-list {
   display: none;
   list-style-position: outside;
-  color: #000505;
+  color:rgb(12, 12, 12);
 }
 
 .benefits-list {
   display: none;
   list-style-position: outside;
-  color: #000505;
+  color:rgb(12, 12, 12);
 }
 .about-list {
   display: none;
-  color: #000505;
+  color:rgb(12, 12, 12);
 }
 .contact-list {
   display: none;
-  color: #000505;
+  color:rgb(12, 12, 12);
 }
 
 .book-tour {
@@ -93,18 +128,15 @@
 }
 
 .plan-btn {
+  font-family: "Lobster", sans-serif;
   background-color: rgb(249, 79, 155);
   text-align: center;
   color: rgb(12, 12, 12);
 }
 
-.card-body {
-  cursor: pointer;
-}
-
 .plan-btn:hover {
   background-color: rgb(12, 12, 12);
-  color:rgb(249, 79, 155);
+  color: rgb(249, 79, 155);
 }
 
 .card-body h2:hover {
@@ -114,19 +146,12 @@
 
 /* ------------------------------------------------Card-Main section Destination Page */
 
-.logo-destination {
-  background: url("../images/travel7.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 700px;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;  
-}
+
+
 .custom-card {
-  border: rgb(249, 79, 155) solid 3px;
-  background-color:rgb(247, 232, 239);
+ font-family: "exo 2", sans-serif;
+  border:   #525050 solid 2px;
+  background-color: #dfdede;
 }
 
 .card-footer-bg {
@@ -141,7 +166,7 @@
 }
 
 .custum-text {
-  font-family: "Roboto", cursive, sans-serif;
+  font-family: "exo 2", sans-serif;
   font-weight: 400;
   color: rgb(12, 12, 12);
   padding: 10px;
@@ -149,40 +174,39 @@
 }
 
 .btn-book {
-   font-family: "Lobster", cursive, sans-serif;
-  background-color:rgb(249, 79, 155);
-  color: rgb(12, 12, 12);;
+  font-family: "Lobster", cursive, sans-serif;
+  font-size: 20px;
+  background-color: rgb(249, 79, 155);
+  color: rgb(12, 12, 12);
   text-align: center;
   width: 45%;
   padding-left: 4px;
 }
 
 .btn-book:hover {
-  color:rgb(249, 79, 155);
+  color: rgb(249, 79, 155);
   background-color: rgb(247, 232, 239);
 }
 
 /* ------------------------------------------------Travel section Travel Magazine Page */
 
-.logo {
-  background: url("../images/logo-img.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 700px;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  }
-  
 
 .custum-travel {
   max-width: 85%;
   margin: 40px auto;
-  background-color:rgb(247, 232, 239);
+  background-color: #dfdede;
   border: rgb(249, 79, 155) solid 10px;
   padding: 40px 20px 100px 20px;
   text-align: justify;
+}
+
+.heading-sub {
+  font-family: "exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(12, 12, 12);
+  padding-bottom: 5px;
+  padding-top: 10px;
 }
 
 .holder-img {
@@ -196,13 +220,11 @@
 .align-left {
   float: left;
   margin-right: 20px;
- 
 }
 
 .align-right {
   float: right;
   margin-left: 20px;
-    
 }
 
 .slide-in {
@@ -222,199 +244,219 @@
   opacity: 1;
   transform: translateX(0%) scale(1);
 }
+
+
 /* ------------------------------------------------Main section Plan-Trip Page */
 
 
-.logo-trip{
- background: url("../images/best-travel1.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 700px;
-  transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-}
 
-
-
-/* --- Start progress bar --- */
+/* ---  progress bar --- */
 
 .process-wrapper {
-	margin:auto;
-	max-width:1200px;
+  margin: auto;
+  max-width: 1200px;
 }
 
 #progress-bar-container {
-	position:relative;
-	width:90%;
-	margin:auto;
-	height:100px;
-	margin-top:50px;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 50px;
 }
 
 #progress-bar-container ul {
-	padding:0;
-	margin:0;
-	padding-top:15px;
-	z-index:9999;
-	position:absolute;
-	width:100%;
-	margin-top:-40px
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
 }
 
 #progress-bar-container li:before {
-	content:" ";
-	display:block;
-	margin:auto;
-	width:25px;
-	height:25px;
-	border-radius:50%;
-	border:solid 1px rgb(100, 100, 100);
-	transition:all ease 0.3s;
-     
+  content: " ";
+  display: block;
+  margin: auto;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: solid 1px rgb(100, 100, 100);
+  transition: all ease 0.3s;
 }
 
-#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
-	border:solid 2px #fff;
-       	 
-	background: linear-gradient(to right,rgb(249, 79, 155) 0%,#fff 100%); 
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before {
+  border: solid 2px #fff;
+
+  background: linear-gradient(to right, rgb(249, 79, 155) 0%, #fff 100%);
 }
 
 #progress-bar-container li {
-	list-style:none;
-	float:left;
-	width:20%;
-	text-align:center;
-	color:rgb(129, 128, 128);
-	text-transform:uppercase;
-	cursor:pointer;
-	transition:all ease 0.2s;
-	vertical-align:bottom;
-	height:70px;
-	position:relative;
-    font-family: "caveat", sans-serif;
-    font-weight:700;
-    font-size: 60px;
+  list-style: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: rgb(129, 128, 128);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 70px;
+  position: relative;
+  font-family: "caveat", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
 }
 
 #progress-bar-container li .step-inner {
-	position:absolute;
-	width:100%;
-	bottom:0;
-    font-size: 20px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 20px;
 }
 
-#progress-bar-container li.active, #progress-bar-container li:hover {
-	color:rgb(12, 12, 12);
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+  color: rgb(12, 12, 12);
 }
 
 #progress-bar-container li:after {
-	content:" ";
-	display:block;
-	width:15px;
-	height:15px;
-	background:rgb(249, 79, 155);
-	margin:auto;
-	border:solid 5px rgb(255, 255, 28);
-	border-radius:50%;
-	margin-top:50px;
-	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
-	transition:all ease 0.2s;
-     
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: rgb(249, 79, 155);
+  margin: auto;
+  border: solid 5px rgb(255, 255, 28);
+  border-radius: 50%;
+  margin-top: 50px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.2s;
 }
 
-
-
 #progress-bar-container #line {
-	width:80%;
-	margin:auto;
-	background:#dfdede;
-	height:6px;
-	position:absolute;
-	left:10%;
-	top:57px;
-	z-index:1;
-	border-radius:50px;
-	transition:all ease 0.9s;
+  width: 80%;
+  margin: auto;
+  background: #dfdede;
+  height: 6px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.9s;
 }
 
 #progress-bar-container #line-progress {
-	content:" ";
-	width:3%;
-	height:100%;
-	background: rgb(249, 79, 155);	 
-	background: linear-gradient(to right, rgb(249, 79, 155) 0%,rgb(255, 92, 165) 100%); 
-	position:absolute;
-	z-index:2;
-	border-radius:50px;
-	transition:all ease 0.9s;
+  content: " ";
+  width: 3%;
+  height: 100%;
+  background: rgb(249, 79, 155);
+  background: linear-gradient(
+    to right,
+    rgb(249, 79, 155) 0%,
+    rgb(255, 92, 165) 100%
+  );
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
 }
 
 #progress-content-section {
-	width:90%;
-	margin: auto;
-	background: #dfdede;
-	border-radius: 4px;
+  width: 90%;
+  margin: auto;
+  background: #dfdede;
+  border-radius: 4px;
 }
 
 #progress-content-section .section-content {
-	padding:30px 40px;
-	text-align:center;
+  padding: 30px 40px;
+  text-align: center;
 }
 
 #progress-content-section .section-content h2 {
-	font-size:40px;
-    font-family: "caveat", sans-serif;
-    font-weight: 700;
-	text-transform:uppercase;
-	color:rgb(12, 12, 12);
-	letter-spacing:1px;
+  font-size: 40px;
+  font-family: "caveat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(12, 12, 12);
+  letter-spacing: 1px;
 }
 
 #progress-content-section .section-content p {
-	font-size:30px;
-    font-family: "caveat", sans-serif;
-    font-weight: 400;
-	line-height:1.8em;
-	color:rgb(12, 12, 12);
-    text-align: justify;
+  font-size: 30px;
+  font-family: "caveat", sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: rgb(12, 12, 12);
+  text-align: justify;
 }
 
 #progress-content-section .section-content {
-	display:none;
-	animation: FadeInUp 700ms ease 1;
-	animation-fill-mode:forwards;
-	transform:translateY(15px);
-	opacity:0;
+  display: none;
+  animation: FadeInUp 700ms ease 1;
+  animation-fill-mode: forwards;
+  transform: translateY(15px);
+  opacity: 0;
 }
 
 #progress-content-section .section-content.active {
-	display:block;
+  display: block;
 }
 
 @keyframes FadeInUp {
-	0% {
-		transform:translateY(15px);
-		opacity:0;
-	}
-	
-	100% {
-		transform:translateY(0px);
-		opacity:1;
-	}
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
+.custom-site {
+  color: rgb(249, 79, 155);
+  font-size: 30px;
+  font-family: "caveat", sans-serif;
+  font-weight: 400;
+  padding-left: 15px;
+}
 
+/* ----------------------------------------Contact, Contact Form */
 
+.contact-heading {
+  font-family: "exo 2", sans-serif;
+  font-weight: 500;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
 
+.center-form {
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 80%;
+  background-color: #dfdede;
+}
+
+button[type="submit"] {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  color: #fafafa;
+  background-color: #525050;
+}
 
 /* ------------------------------------------------Footer */
 
 footer {
-  background-color: #808080de;
+  background-color: #525050;
   min-height: 150px;
-  margin-top: 10px ;
+  margin-top: 10px;
   padding: 10px 5px;
 }
 .social-links {
@@ -429,7 +471,7 @@ footer {
 .social-links li a i {
   width: 50px;
   height: 50px;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 50%;
   font-size: 25px;
   text-align: center;
@@ -443,17 +485,14 @@ footer {
 
 .social-links li a i:hover {
   background: rgb(255, 255, 28);
-  color:rgb(249, 79, 155);
+  color: rgb(249, 79, 155);
 }
 
-.uppercase {
-  text-transform: uppercase;
-}
 
 .general-sub {
-  font-family: "caveat", sans-serif;
-  font-weight: 700;
-  font-size: 30px;
+  font-family: "exo 2", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
   color: #fafafa;
   padding-bottom: 5px;
   padding-top: 10px;
@@ -462,8 +501,37 @@ footer {
 /* ------------------------------------------------Modal-Calculate */
 
 .modal-footer {
-  background-color:rgb(249, 79, 155);
+  background-color: rgb(249, 79, 155);
 }
 .modal-header {
   background-color: rgb(249, 79, 155);
+}
+
+/* -------------------------------------------------Media Queries */
+
+@media (max-width: 600px) {
+  .holder-img {
+    max-width: 100%;
+    height: auto;
+  }
+  #progress-bar-container li {
+    width: 20%;
+    font-weight: 200;
+    font-size: 5px;
+    font-family: "exo 2";
+  }
+}
+
+@media (max-width: 800px) {
+  .social-links li a i {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    font-size: 20px;
+  }
+
+  .social-links li:not(:first-child) {
+    padding-left: 2px;
+  }
 }

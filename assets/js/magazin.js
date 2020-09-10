@@ -1,4 +1,4 @@
-// control 
+// control time of slid
 function debounce(func, wait = 20, immediate = true) {
   var timeout;
   return function () {
