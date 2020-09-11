@@ -15,6 +15,15 @@
       type="text/css"
     />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_sCJdCB7yvTYCIaD3ZX7iL");
+      })();
+    </script>
     <title>My Dream Holiday</title>
   </head>
   <body>
@@ -72,14 +81,15 @@
         </div>
       </div>
       <div class="row">
-        <div class="col center-form ">
-          <form >
+        <div class="col center-form">
+          <form onsubmit="return sendMail(this);">
             <h3 class="contact-heading">Personal Information</h3>
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputname">Name</label>
                 <input
                   type="text"
+                  name="name"
                   class="form-control"
                   id="inputname"
                   placeholder="Name"
@@ -90,6 +100,7 @@
                 <label for="inputEmail">Email</label>
                 <input
                   type="email"
+                  name="emailaddress"
                   class="form-control"
                   id="inputEmail"
                   placeholder="Email"
@@ -102,6 +113,7 @@
                 <label for="inputAddress">Address</label>
                 <input
                   type="text"
+                  name="address"
                   class="form-control"
                   id="inputAddress"
                   placeholder="Address"
@@ -112,6 +124,7 @@
                 <label for="inputMobile">Mobile Number</label>
                 <input
                   type="number"
+                  name="mobile"
                   class="form-control"
                   id="inputMobile"
                   placeholder="Mobile Number"
@@ -126,7 +139,6 @@
                   class="form-control"
                   id="inputZip"
                   placeholder="Zip"
-                  required
                 />
               </div>
               <div class="form-group col-md-6">
@@ -134,15 +146,17 @@
                 <input
                   type="text"
                   class="form-control"
+                  name="city"
                   id="inputCity"
                   placeholder="City"
+                  required
                 />
               </div>
             </div>
             <h3 class="contact-heading">Trip Informations</h3>
             <div class="form-row">
               <div class="form-group col-md-6">
-                <select id="inputcity" class="form-control">
+                <select id="inputcity" class="form-control" name="destination">
                   <option selected>Choose Your Destination</option>
                   <option>SharmAl-shikh</option>
                   <option>Alexandria</option>
@@ -156,7 +170,7 @@
                 </select>
               </div>
               <div class="form-group col-md-6">
-                <select id="inputHotel" class="form-control">
+                <select id="inputHotel" class="form-control" name="hotel">
                   <option selected>Choose Hotel Stars</option>
                   <option>5 stars Hotel</option>
                   <option>4 stars Hotel</option>
@@ -170,13 +184,19 @@
                 <input
                   type="date"
                   class="form-control"
+                  name="fromDate"
                   id="inputdate1"
                   required
                 />
               </div>
               <div class="form-group col-md-6">
                 <label for="inputdate2">To</label>
-                <input type="date" class="form-control" id="inputdate2" />
+                <input
+                  type="date"
+                  class="form-control"
+                  id="inputdate2"
+                  name="toDate"
+                />
               </div>
             </div>
             <div class="form-row">
@@ -184,6 +204,7 @@
                 <label for="inputNoOfPersons">Number of Persons</label>
                 <input
                   type="number"
+                  name="noOfP"
                   class="form-control"
                   id="inputNoOfPersons"
                   required
@@ -191,57 +212,65 @@
               </div>
               <div class="form-group col-md-6">
                 <label for="inputNoOfDays">Number of Days</label>
-                <input type="number" class="form-control" id="inputNoOfDays" />
+                <input
+                  type="number"
+                  class="form-control"
+                  id="inputNoOfDays"
+                  name="noOfD"
+                />
               </div>
             </div>
             <div class="form-row">
               <div class="form-group col-md-6">
-              <fieldset >
-              <div class="row">
-                <legend class="col-form-label col-sm-10 pt-0">
-                  Please let us know if you need a private guide
-                </legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="guideCheck"
-                      value=""
-                    />
-                    <label class="form-check-label" for="defaultCheck">
-                      Yes,Book a private guide
-                    </label>
-                  </div>
-                </div>
-                 <div class="col-sm-10">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      id="guideCheck1"
-                      value=""
-                    />
-                    <label class="form-check-label" for="defaultCheck">
-                      No, thank You
-                    </label>
-                  </div>
-                </div>
-              </div>
-            </fieldset>  
+                <fieldset>
+                    <legend class="col-form-label col-sm-10 pt-0">
+                      Please let us know if you need a private guide
+                    </legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          name="guideY"
+                          type="checkbox"
+                          id="guideCheck"
+                          value=""
+                        />
+                        <label class="form-check-label" for="guideCheck">
+                          Yes,Book a private guide
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          name="guideN"
+                          type="checkbox"
+                          id="guideCheck1"
+                          value=""
+                        />
+                        <label class="form-check-label" for="guideCheck1">
+                          No, thank You
+                        </label>
+                      </div>
+                    </div>
+                  
+                </fieldset>
               </div>
               <div class="form-group col-md-6">
                 <textarea
-                rows="5"
-                name="tripsummary"
-                id="tripsummary"
-                class="form-control"
-                placeholder="Trip Description"
-                required
-              ></textarea>
+                  rows="5"
+                  name="tripsummary"
+                  id="tripsummary"
+                  class="form-control"
+                  placeholder="Trip Description"
+                  required
+                ></textarea>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">
+              Start Your Dream Trip
+            </button>
           </form>
         </div>
       </div>
@@ -305,5 +334,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/sendEmail.js"></script>
   </body>
 </html>

@@ -19,10 +19,10 @@ function selectHotel(){
 function calculate(event){
     let persons = document.getElementById("inputNoOfPersons").value;
     let days = document.getElementById("inputNoOfdays").value;
-    let result = parseFloat(persons) * parseFloat(days)* parseFloat(citySelected)* parseFloat(hotelSelected);
+    let result = parseFloat(persons) * parseFloat(days)* parseFloat(citySelected)* parseFloat(hotelSelected) ;
     console.log(days);
     console.log(citySelected);
     console.log(result);
     console.log(hotelSelected);
-    document.getElementById("CalculateTheCost").value = result;
+    document.getElementById("CalculateTheCost").value = '$' + result ;
     }
