@@ -415,6 +415,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title">Calculate Your Cost</h5>
+
             <button
               type="button"
               class="close"
@@ -478,25 +479,23 @@
               </div>
 
               <fieldset class="form-group">
-                  <legend class="col-form-label col-sm-10 pt-0">
-                    Do you like your journey to be perfect?
-                  </legend>
-                  <div class="col-sm-10">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        id="guideCheck"
-                        value=""
-                      />
-                      <label class="form-check-label" for="guideCheck">
-                        Book a private guide
-                      </label>
-                    </div>
+                <legend class="col-form-label col-sm-10 pt-0">
+                  Do you like your journey to be perfect?
+                </legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="guideCheck"
+                      value=""
+                    />
+                    <label class="form-check-label" for="guideCheck">
+                      Book a private guide
+                    </label>
                   </div>
-                
+                </div>
               </fieldset>
-
               <div class="form-group row">
                 <div class="col-sm-4">
                   <button
@@ -514,7 +513,13 @@
                     id="CalculateTheCost"
                   />
                 </div>
+                <span>$</span>
               </div>
+              <span class="note">
+                The calculate gives the approximate cost. The final cost will be
+                shared once we get the form as it depends on the Season,
+                Available Hotels, and Date of the Holiday</span>
+
             </form>
           </div>
           <div class="modal-footer">

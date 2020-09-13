@@ -1,9 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Exo+2:ital,wght@1,300;1,500&family=Lobster&family=Long+Cang&family=Lobster&family=Open+Sans:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Exo+2:ital,wght@1,300;1,500&family=Lobster&family=Open+Sans:wght@100;200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+.alert {
+  padding: 15px;
+  background-color: #525050;
+  color: #fafafa;
+  text-align: center;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: rgb(247, 55, 55);
 }
 
 /* ------------------------------------------------NAVBAR */
@@ -365,6 +388,8 @@
   transition: all ease 0.9s;
 }
 
+/* ---  content section --- */
+
 #progress-content-section {
   width: 90%;
   margin: auto;
@@ -444,9 +469,12 @@
   background-color: #dfdede;
 }
 
+.buttonHolder { 
+text-align: center;
+}
 button[type="submit"] {
-  margin-top: 15px;
-  margin-bottom: 20px;
+  width:40%;
+  margin:0 auto;
   color: #fafafa;
   background-color: #525050;
   font-size: 30px;
@@ -508,6 +536,10 @@ footer {
   background-color: rgb(249, 79, 155);
 }
 
+.note {
+    margin: 5px;
+    padding: 5px;;
+}
 /* -------------------------------------------------Media Queries */
 
 @media (max-width: 600px) {

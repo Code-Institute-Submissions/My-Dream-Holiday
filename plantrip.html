@@ -65,6 +65,7 @@
       <!--Hero Image-->
     </header>
     <section class="container-fluid">
+    <!--main section-->
       <div class="row">
         <div class="col">
           <h2 class="section-heading">Plan Your Trip From A to Z</h2>
@@ -73,6 +74,7 @@
       <div class="row">
         <div class="col">
           <div class="process-wrapper">
+            <!--progress bar-->
             <div id="progress-bar-container">
               <ul>
                 <li class="step step01 active">
@@ -96,7 +98,8 @@
                 <div id="line-progress"></div>
               </div>
             </div>
-
+            <!--progress bar-->
+            <!--content section-->
             <div id="progress-content-section">
               <div class="section-content st-step active">
                 <h2>Plan your trip, where and how to travel</h2>
@@ -193,9 +196,11 @@
                 </p>
               </div>
             </div>
+            <!--content section-->
           </div>
         </div>
       </div>
+      <!--main section -->
     </section>
 
     <!--Footer-->
@@ -237,9 +242,9 @@
           </ul>
         </div>
         <div class="col-md-4 text-center">
-          <h5 class="uppercase general-sub">Work for us</h5>
-          <p class="inline-block general-sub">
-            Want to be one of our local experts? Send Your C.V to My Dream
+          <h5 class=" general-sub">Do You have any Dream trip in your mind?</h5>
+          <p class=" general-sub">
+            Want to be one of our local experts? <br>Send Your C.V to <br>My Dream
             Holiday@gmail.com
           </p>
         </div>
@@ -256,36 +261,6 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
-    <script>
-      $(".step").click(function () {
-        $(this).addClass("active").prevAll().addClass("active");
-        $(this).nextAll().removeClass("active");
-      });
-
-      $(".step01").click(function () {
-        $("#line-progress").css("width", "3%");
-        $(".st-step").addClass("active").siblings().removeClass("active");
-      });
-
-      $(".step02").click(function () {
-        $("#line-progress").css("width", "25%");
-        $(".nd-step").addClass("active").siblings().removeClass("active");
-      });
-
-      $(".step03").click(function () {
-        $("#line-progress").css("width", "50%");
-        $(".ed-step").addClass("active").siblings().removeClass("active");
-      });
-
-      $(".step04").click(function () {
-        $("#line-progress").css("width", "75%");
-        $(".th-step").addClass("active").siblings().removeClass("active");
-      });
-
-      $(".step05").click(function () {
-        $("#line-progress").css("width", "100%");
-        $(".fi-step").addClass("active").siblings().removeClass("active");
-      });
-    </script>
+    <script src="assets/js/planTrip.js"></script>
   </body>
 </html>

@@ -24,5 +24,5 @@ function calculate(event){
     console.log(citySelected);
     console.log(result);
     console.log(hotelSelected);
-    document.getElementById("CalculateTheCost").value = '$' + result ;
+    document.getElementById("CalculateTheCost").value = result ;
     }
