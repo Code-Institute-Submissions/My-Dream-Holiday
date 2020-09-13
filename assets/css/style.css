@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/* ------------------------------------------------The Banner Msg */
 
 .alert {
   padding: 15px;
@@ -26,7 +27,12 @@
 }
 
 .closebtn:hover {
-  color: rgb(247, 55, 55);
+  color: rgb(249, 79, 155);
+}
+
+.link-site {
+    color:  rgb(249, 79, 155);
+    text-decoration: underline;
 }
 
 /* ------------------------------------------------NAVBAR */
@@ -83,6 +89,10 @@
 
 /* ------------------------------------------------general */
 
+section{
+    padding: 20px 0 50px;
+}
+
 .section-heading {
   font-family: "Lobster", sans-serif;
   padding: 20px;
@@ -119,21 +129,21 @@
 .service-list {
   display: none;
   list-style-position: outside;
-  color:rgb(12, 12, 12);
+  color: rgb(12, 12, 12);
 }
 
 .benefits-list {
   display: none;
   list-style-position: outside;
-  color:rgb(12, 12, 12);
+  color: rgb(12, 12, 12);
 }
 .about-list {
   display: none;
-  color:rgb(12, 12, 12);
+  color: rgb(12, 12, 12);
 }
 .contact-list {
   display: none;
-  color:rgb(12, 12, 12);
+  color: rgb(12, 12, 12);
 }
 
 .book-tour {
@@ -169,11 +179,9 @@
 
 /* ------------------------------------------------Card-Main section Destination Page */
 
-
-
 .custom-card {
- font-family: "exo 2", sans-serif;
-  border:   #525050 solid 2px;
+  font-family: "exo 2", sans-serif;
+  border: #525050 solid 2px;
   background-color: #dfdede;
 }
 
@@ -190,7 +198,7 @@
 
 .custum-text {
   font-family: "exo 2", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   color: rgb(12, 12, 12);
   padding: 10px;
   text-align: justify;
@@ -212,7 +220,6 @@
 }
 
 /* ------------------------------------------------Travel section Travel Magazine Page */
-
 
 .custum-travel {
   max-width: 85%;
@@ -268,10 +275,7 @@
   transform: translateX(0%) scale(1);
 }
 
-
 /* ------------------------------------------------Main section Plan-Trip Page */
-
-
 
 /* ---  progress bar --- */
 
@@ -450,34 +454,45 @@
   font-family: "caveat", sans-serif;
   font-weight: 400;
   padding-left: 15px;
+  text-decoration: underline;
 }
 
 /* ----------------------------------------Contact, Contact Form */
 
+.custom-bg{
+    background-color: #dfdede;
+}
 .contact-heading {
   font-family: "exo 2", sans-serif;
   font-weight: 500;
   padding: 20px;
-  margin: 20px auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .center-form {
-  padding: 10px;
-  margin: 10px auto;
+  padding: 20px;
+  margin: 0 auto;
   max-width: 80%;
-  background-color: #dfdede;
+  background-color: #525050;
+  color: #fafafa;
+  font-family: "exo 2", sans-serif;
 }
 
-.buttonHolder { 
-text-align: center;
+.buttonHolder {
+  text-align: center;
+  margin: 10px auto;
 }
-button[type="submit"] {
-  width:40%;
-  margin:0 auto;
-  color: #fafafa;
-  background-color: #525050;
-  font-size: 30px;
+.btn-contact {
+  width: 40%;
+  color:rgb(249, 79, 155);
+  background-color:#fff  ;
+  border: rgb(12, 12, 12) solid 2px;
+  font-size: 20px;
+}
+.btn-contact:hover {
+  background-color: rgb(12, 12, 12);
+  color: rgb(249, 79, 155);
 }
 
 /* ------------------------------------------------Footer */
@@ -485,8 +500,7 @@ button[type="submit"] {
 footer {
   background-color: #525050;
   min-height: 150px;
-  margin-top: 10px;
-  padding: 10px 5px;
+  padding: 15px 5px;
 }
 .social-links {
   padding-bottom: 15px;
@@ -517,7 +531,6 @@ footer {
   color: rgb(249, 79, 155);
 }
 
-
 .general-sub {
   font-family: "exo 2", sans-serif;
   font-weight: 500;
@@ -537,8 +550,8 @@ footer {
 }
 
 .note {
-    margin: 5px;
-    padding: 5px;;
+  margin: 5px;
+  padding: 5px;
 }
 /* -------------------------------------------------Media Queries */
 
@@ -553,6 +566,11 @@ footer {
     font-size: 5px;
     font-family: "exo 2";
   }
+
+  .btn-contact {
+  width: 80%;
+  
+}
 }
 
 @media (max-width: 800px) {
