@@ -1,6 +1,6 @@
 <h1 align="center">My Dream Holiday Website</h1>
 
-*Welcome to my project!* [View the live project here.](https://)
+*Welcome to my project!* [View the live project here.](https://nahed2019.github.io/My-Dream-Holiday/.)
 
 ![](assets/images/best-travel1.jpg)
 
@@ -56,19 +56,21 @@ This projects was created across  5 activity planes :
 
 *   ### Wireframes
 
+[view](My-Dream-Holiday/assets/wireframes/)
+
     1. All Wireframes are created by using Balsamic.
     2. Tablet and Desktop wireframes have the same view. 
 
-    -   Desktop Wireframe - Contact Us [View](assets/Wireframes/desktopview/contactUs.png) 
-                            Home page [View](assets/Wireframes/desktopview/home-page.png)
-                            Destinations [View](assets/Wireframes/desktopview/ourDstination.png)
-                            Plan yor trip [View](assets/Wireframes/desktopview/planYourTrip.png)
-                            Travel Magazine[View](assets/Wireframes/desktopview/travelMagazine.png)
-    -   Mobile Wireframe - Contact Us [View](assets/Wireframes/mobileview/contactUs-mobile-view.png)  
-                           Destinations [View](assets/Wireframes/mobileview/ourDstination-mobile-view.png)
-                           Plan yor trip[View](assets/Wireframes/mobileview/planYourTrip-mobile-view.png)
-                           Home page[View](assets/Wireframes/mobileview/home-page-mobile-view.png)
-                           Travel Magazine[View](assets/Wireframes/mobileview/travelMagazine-mobile-view.png)
+    -  Desktop Wireframe - [Home page](assets/wireframes/desktopview/home-page.png)
+                           [Destination](assets/wireframes/desktopview/ourDstination.png)
+                           [Plan yor trip](assets/wireframes/desktopview/planYourTrip.png)
+                           [Travel Magazine](assets/wireframes/desktopview/travelMagazine.png)
+                           [Contact Us](assets/wireframes/desktopview/contactUs.png)
+    -  Mobile Wireframe  - [Home page](assets/wireframes/mobileview/home-page-mobile.png) 
+                           [Destination](assets/wireframes/mobileview/ourDstination-mobile.png)
+                           [Plan yor trip](assets/wireframes/mobileview/planYourTrip-mobile.png)
+                           [Travel Magazine](assets/wireframes/mobileview/travelMagazine-mobile.png)
+                           [Contact Us](assets/wireframes/mobileview/contactUs-mobile.png)
     
 
 ## Features
@@ -127,6 +129,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
  The result of HTML : Document checking completed. No errors or warnings to show.
 
 -   [W3C Markup Validator](https://validator.w3.org/) 
+
+My JavaScript code passes through a linter (jshint.com) with no major issues.[jshint.com](https://jshint.com/)
  
 
 ### Testing User Stories from User Experience (UX) Section
@@ -150,12 +154,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   #### Returning Visitor Goals
 
     1. As a Returning Visitor, I want to find information about new places and destinations
-        1. These are clearly shown in the banner message.(in this days the message releted to Corona Virus)
+        1. These are clearly shown in the banner message.(in these days the message related to Corona Virus)
         2. TUser can go directly to the Travel Magazine page where he can find information about different touristic places.
 
-    2. As a Returning Visitor, I want to find best deals and packages for my dram trip.
-        1. These are clearly shown in the banner message.(in this days the message releted to Corona Virus).
-        2. User can go directly to the Destinations page where all destinations and packages will be available.
+    2. As a Returning Visitor, I want to find the best deals and packages for my dram trip.
+        1. These are clearly shown in the banner message.(in these days the message related to Corona Virus).
+        2. The user can go directly to the Destinations page where all destinations and packages will be available.
         3. Whichever link they click, it will be open up in a new tab to ensure the user can easily get back to the website.
 
     3. As a Returning Visitor, I want to find the best way to get in contact with Dream Holiday with any questions I may have.
@@ -189,7 +193,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Known Bugs
 
 -   In Windows 8.1Firefox 30 and Windows 7IE 8 the navbar showing as alist not inline.
--   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   The contact form  is fine in most browsers, But it is not working properly in win10 - ie- 11.0 , it shifted to the right.
 
 ## Deployment
 
@@ -198,7 +202,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 To run a frontend (HTML, CSS) application in Gitpod, in the terminal, type:
 
-`09`
+`python3 -m http.server`
 
 A blue button should appear to click: *Make Public*,
 
@@ -211,7 +215,6 @@ The project was deployed to GitHub Pages using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-    - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
@@ -242,11 +245,6 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
 
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
@@ -255,21 +253,21 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
-- All Content was written by Me.
+- All Content was written by developer.
 
 
 ### Media
 
 - All Images were downloaded from Google.com
-- Most of Texts and Paragraphs from Wikipedia with some changes done by the developer
+- Most of the Texts and Paragraphs from Wikipedia with some changes done by the developer
 
 ### Acknowledgements
 
-- I received inspiration for some point in this project from YouTube videos Java Script coding helped me get some ideas and
-    implement the same while building the site such as:
+- I received inspiration for some points in this project from YouTube videos Java Script coding.
+  it helped me get some ideas and implement the same while building the site such as:
     * https://www.youtube.com/watch?v=oXLha6A4gjc&t=206s
     * https://javascript30.com/
-    ( I reused some code and a adjust it as my project need)
+    - ( I reused some code and  adjusted it as my project needs)
 
 
 ## Thank you
