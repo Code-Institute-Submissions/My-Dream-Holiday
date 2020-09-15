@@ -56,21 +56,18 @@ This projects was created across  5 activity planes :
 
 *   ### Wireframes
 
-[view](My-Dream-Holiday/assets/wireframes/)
 
     1. All Wireframes are created by using Balsamic.
     2. Tablet and Desktop wireframes have the same view. 
 
-    -  Desktop Wireframe - [Home page](assets/wireframes/desktopview/home-page.png)
-                           [Destination](assets/wireframes/desktopview/ourDstination.png)
-                           [Plan yor trip](assets/wireframes/desktopview/planYourTrip.png)
-                           [Travel Magazine](assets/wireframes/desktopview/travelMagazine.png)
-                           [Contact Us](assets/wireframes/desktopview/contactUs.png)
-    -  Mobile Wireframe  - [Home page](assets/wireframes/mobileview/home-page-mobile.png) 
-                           [Destination](assets/wireframes/mobileview/ourDstination-mobile.png)
-                           [Plan yor trip](assets/wireframes/mobileview/planYourTrip-mobile.png)
-                           [Travel Magazine](assets/wireframes/mobileview/travelMagazine-mobile.png)
-                           [Contact Us](assets/wireframes/mobileview/contactUs-mobile.png)
+    -  Desktop Wireframe -
+
+![](assets/wireframes/desktopview/desktopview.jpg)
+  
+    -  Mobile Wireframe  - 
+
+ ![](assets/wireframes/mobileview/mobileview.jpg) 
+   
     
 
 ## Features
